@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">sonashX</h1>
+        <div class="nav-link" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()" ></i>
+        <ul>
+           <li><a href="">Home</a></li>  
+           <li><a href="">About Us</a></li>
+           <li><a href="">Services</a></li>
+           <li><a href="">Contact</a></li>         
+        </ul>
+    </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <script src="https://use.fontawesome.com/69251be987.js"></script>
+           <!--javascript -->
+    <script>
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+    </script>
+</body>
+
+
+
+</html>
